@@ -1,0 +1,28 @@
+def get_order(stack_orders):
+    stack_orders=[]
+
+    stack_orders=list(reversed(orders))
+    stack_orders1=list(stack_orders)
+    for i in range(quantity):
+        print('Preparing order ',i+1,':',stack_orders.pop())
+
+
+    print('Following order is being dispatched:')
+    for i in range(quantity):
+        print('Order ',i+1,':',stack_orders1.pop())
+    return(stack_orders)
+
+
+quantity=int(input('How many order: '))
+orders=[]
+for i in range(quantity):
+    print('Namne of order ',i+1,': ',end='' )
+    name_order=input('')
+    orders.append(name_order)
+
+get_order(orders)
+
+
+
+
+
