@@ -10,6 +10,8 @@ ag_improvement=annual_gain_improvement()
 print('Annual Gain from Improvement: ',ag_improvement)
 
 print('Annual ROI: ',calculate_ratio(ag_improvement,improvement_cost))
-print('ROI:',calculate_ratio(tg_improvement,improvement_cost))
+
+x=calculate_ratio(tg_improvement,improvement_cost)
+print('ROI:',x)
 
 
