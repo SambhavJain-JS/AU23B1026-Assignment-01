@@ -23,9 +23,9 @@ def calculate_ratio(number_1, number_2):
     ratio_numerator = number_1 / number_2
     ratio_denominator = 1
     ratio = (ratio_numerator, ratio_denominator)
-    c=print(ratio[0] ,':', ratio[1])
-
-    return c
+    c=str(ratio[0])+':'
+    d=str(ratio[1])
+    return (c+d)
 
 
 annual_pofit=int(input('Annual Site Profit: '))
