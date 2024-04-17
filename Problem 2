@@ -1,0 +1,55 @@
+def get_name():
+    name=input("Please enter your name: ")
+    return name
+
+def get_tshirt(brand):
+    user_name = get_name()
+    
+    available_brands = ["Nike", "Zudio", "Raymond", "Puma"]  
+    
+    if brand in available_brands:
+        print("Hi,", user_name ,"the brand you are looking for is available in our store.")
+        check=input('Did you want to check size:\n1. Yes\n2. No\nenter:')
+        if check=='Yes':
+            size=(input('Enter Size: '))
+    
+            if brand=='Nike':
+                size_available=['s','m','l']
+                if size in size_available:
+                    print('Size is also available')
+                    present=True
+    
+            elif brand=='Zudio':
+                size_available=['m','l','xl']
+                if size in size_available:
+                    print('Size is also available')
+                    present=True
+    
+    
+            elif brand=='Raymond':
+                size_available=['s','l','xl']
+                if size in size_available:
+                    print('Size is also available')
+                    present=True
+    
+            elif brand=='Puma':
+                size_available=['xs','s','m']
+                if size in size_available:
+                    print('Size is also available')
+                    present=True
+            if present !=True:
+                print('Size is not available')
+        else:
+            present=None
+
+        
+    else:
+        print("Hi,",user_name, "unfortunately the brand you are looking for is not available in our store.")
+
+
+
+
+
+
+brand=input('Enter Name of Tshirt Brand: ')
+get_tshirt(brand)  
